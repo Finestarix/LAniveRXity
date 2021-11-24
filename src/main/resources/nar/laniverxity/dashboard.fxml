@@ -128,8 +128,9 @@
                 </graphic>
             </Button>
             <Button alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" text="Courses" textFill="#FFFFFF"
-                    style="-fx-background-color: #259BC3; -fx-background-radius: 10;">
-                <VBox.margin>
+                    style="-fx-background-color: #259BC3; -fx-background-radius: 10;"
+                    onAction="#coursesAction">
+            <VBox.margin>
                     <Insets bottom="5.0" left="10.0" right="10.0" top="5.0"/>
                 </VBox.margin>
                 <padding>
@@ -149,7 +150,7 @@
             </Button>
             <Button alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" text="Forum" textFill="#FFFFFF"
                     style="-fx-background-color: #259BC3; -fx-background-radius: 10;"
-                    fx:id="">
+                    onAction="#forumAction">
                 <VBox.margin>
                     <Insets bottom="5.0" left="10.0" right="10.0" top="5.0"/>
                 </VBox.margin>
