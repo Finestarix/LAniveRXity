@@ -3,6 +3,7 @@ package nar.laniverxity;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.control.PasswordField;
 
 public class LoginController {
     @FXML
@@ -12,7 +13,7 @@ public class LoginController {
     private TextField tfEmailAddress;
 
     @FXML
-    private TextField tfPassword;
+    private PasswordField tfPassword;
 
     @FXML
     private void loginAction() {
