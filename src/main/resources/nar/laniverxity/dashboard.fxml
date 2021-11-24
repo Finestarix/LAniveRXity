@@ -295,7 +295,7 @@
                                 <HBox.margin>
                                     <Insets right="5.0"/>
                                 </HBox.margin>
-                                <Image url="@../../assets/time-input.png"/>
+                                <Image url="@/assets/time-input.png"/>
                             </ImageView>
                             <TextField promptText="hh"
                                        style="-fx-background-color: #FFFFFF; -fx-background-radius: 10; -fx-border-color: #B5BDC9; -fx-border-radius: 10;">
