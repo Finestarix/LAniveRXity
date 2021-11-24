@@ -13,6 +13,7 @@ import java.util.Objects;
 public class MainApplication extends Application {
 
     private static final String FXML_LOGIN_URL = "login.fxml";
+    private static final String FXML_DASHBOARD_URL = "dashboard.fxml";
 
     private static final String ICON_URL = "src/main/resources/assets/favicon.png";
 
@@ -36,12 +37,19 @@ public class MainApplication extends Application {
 
     public void renderLoginPage() {
         try{
-            replaceSceneContent(FXML_LOGIN_URL, 750, 500);
+            changeScene(FXML_LOGIN_URL, 750, 500);
         } catch (Exception ignored) {
         }
     }
 
-    private void replaceSceneContent(String fxml, Integer width, Integer height) throws Exception {
+    public void renderDashboardPage() {
+        try{
+            changeScene(FXML_DASHBOARD_URL, 933, 700);
+        } catch (Exception ignored) {
+        }
+    }
+
+    private void changeScene(String fxml, Integer width, Integer height) throws Exception {
         Parent page = FXMLLoader.load(
                 Objects.requireNonNull(MainApplication.class.getResource(fxml)),
                 null,

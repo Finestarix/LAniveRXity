@@ -26,6 +26,7 @@ public class LoginController {
             lblErrorMessage.setText("Password cannot be null or empty.");
         } else {
             lblErrorMessage.setText("");
+            MainApplication.getInstance().renderDashboardPage();
         }
     }
 }
