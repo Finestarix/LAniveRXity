@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            prefHeight="700.0" prefWidth="933.0"
+            style="-fx-background-color: #DEF2F7;"
+            fx:controller="nar.laniverxity.CoursesController">
+    <top>
+        <HBox BorderPane.alignment="CENTER" style="-fx-background-color: #F9FAFB;">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </padding>
+            <Label text="Learning Management System | LAniveRXity" textFill="#259BC3">
+                <HBox.margin>
+                    <Insets left="10.0"/>
+                </HBox.margin>
+                <font>
+                    <Font name="Segoe UI Black" size="22.0"/>
+                </font>
+            </Label>
+        </HBox>
+    </top>
+    <left>
+        <VBox maxWidth="250.0" minWidth="250.0" prefWidth="250.0" style="-fx-background-color: #26BCE0;">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+            <VBox style="-fx-background-color: #259BC3; -fx-background-radius: 10;">
+                <VBox.margin>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                </VBox.margin>
+                <padding>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                </padding>
+                <BorderPane>
+                    <VBox.margin>
+                        <Insets bottom="20.0"/>
+                    </VBox.margin>
+                    <right>
+                        <Button alignment="CENTER" text="CHANGE" textFill="#259BC3"
+                                style="-fx-background-color: #FFFFFF; -fx-background-radius: 30;">
+                            <font>
+                                <Font name="Segoe UI Semibold" size="13.0"/>
+                            </font>
+                            <padding>
+                                <Insets bottom="5.0" left="15.0" right="15.0" top="5.0"/>
+                            </padding>
+                            <cursor>
+                                <Cursor fx:constant="HAND"/>
+                            </cursor>
+                        </Button>
+                    </right>
+                    <left>
+                        <HBox alignment="CENTER_LEFT">
+                            <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                                <HBox.margin>
+                                    <Insets right="10.0"/>
+                                </HBox.margin>
+                                <Image url="@/assets/role.png"/>
+                            </ImageView>
+                            <Label alignment="CENTER" text="Role" textFill="#FFFFFF">
+                                <font>
+                                    <Font name="Segoe UI Semibold" size="15.0"/>
+                                </font>
+                            </Label>
+                        </HBox>
+                    </left>
+                </BorderPane>
+                <Label text="Trainee" textFill="#FFFFFF">
+                    <VBox.margin>
+                        <Insets top="2.0"/>
+                    </VBox.margin>
+                    <font>
+                        <Font name="Segoe UI Semibold" size="16.0"/>
+                    </font>
+                </Label>
+                <Label text="Teaching Assistant" textFill="#FFFFFF">
+                    <VBox.margin>
+                        <Insets top="2.0"/>
+                    </VBox.margin>
+                    <font>
+                        <Font name="Segoe UI Semibold" size="14.0"/>
+                    </font>
+                </Label>
+                <Label text="LAniveRXity" textFill="#FFFFFF">
+                    <VBox.margin>
+                        <Insets top="2.0"/>
+                    </VBox.margin>
+                    <font>
+                        <Font name="Segoe UI Semibold" size="14.0"/>
+                    </font>
+                </Label>
+            </VBox>
+            <Button alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" text="Dashboard" textFill="#FFFFFF"
+                    style="-fx-background-color: #259BC3; -fx-background-radius: 10;"
+                    onAction="#dashboardAction">
+                <VBox.margin>
+                    <Insets bottom="5.0" left="10.0" right="10.0" top="5.0"/>
+                </VBox.margin>
+                <padding>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                </padding>
+                <font>
+                    <Font name="Segoe UI Semibold" size="14.0"/>
+                </font>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+                <graphic>
+                    <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@/assets/dashboard.png"/>
+                    </ImageView>
+                </graphic>
+            </Button>
+            <Button alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" text="Courses" textFill="#FFFFFF"
+                    style="-fx-background-color: #259BC3; -fx-background-radius: 10;">
+                <VBox.margin>
+                    <Insets bottom="5.0" left="10.0" right="10.0" top="5.0"/>
+                </VBox.margin>
+                <padding>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                </padding>
+                <font>
+                    <Font name="Segoe UI Semibold" size="14.0"/>
+                </font>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+                <graphic>
+                    <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@/assets/courses.png"/>
+                    </ImageView>
+                </graphic>
+            </Button>
+            <Button alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" text="Forum" textFill="#FFFFFF"
+                    style="-fx-background-color: #259BC3; -fx-background-radius: 10;"
+                    onAction="#forumAction">
+                <VBox.margin>
+                    <Insets bottom="5.0" left="10.0" right="10.0" top="5.0"/>
+                </VBox.margin>
+                <padding>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                </padding>
+                <font>
+                    <Font name="Segoe UI Semibold" size="14.0"/>
+                </font>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+                <graphic>
+                    <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@/assets/forum.png"/>
+                    </ImageView>
+                </graphic>
+            </Button>
+        </VBox>
+    </left>
+    <center>
+        <VBox prefHeight="200.0" prefWidth="100.0">
+            <BorderPane.margin>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+            </BorderPane.margin>
+            <Label text="My Courses" textFill="#494949">
+                <font>
+                    <Font name="Segoe UI Bold" size="24.0"/>
+                </font>
+            </Label>
+            <Line stroke="#494949" strokeWidth="2.0" endX="554.2929077148438" endY="-258.6249084472656"
+                  startX="1199.5858154296875" startY="-258.6249084472656">
+                <VBox.margin>
+                    <Insets bottom="20.0" top="5.0"/>
+                </VBox.margin>
+            </Line>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+                <ComboBox prefWidth="320.0" promptText="Choose Semester"
+                          style="-fx-background-color: #FFFFFF; -fx-background-radius: 10; -fx-border-color: #B5BDC9; -fx-border-radius: 10;">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
+                </ComboBox>
+                <GridPane alignment="CENTER" maxHeight="300.0" minHeight="300.0" prefHeight="300.0"
+                          vgap="20.0" hgap="20.0">
+                    <VBox.margin>
+                        <Insets top="20.0"/>
+                    </VBox.margin>
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <VBox GridPane.columnIndex="0" GridPane.rowIndex="0"
+                          style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;">
+                        <padding>
+                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                        </padding>
+                        <Label text="C">
+                            <font>
+                                <Font name="Segoe UI Semibold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT">
+                            <Label text="Total Material: ">
+                                <font>
+                                    <Font name="Segoe UI Semibold" size="12.0"/>
+                                </font>
+                                <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true"
+                                               preserveRatio="true">
+                                        <Image url="@/assets/course.png"/>
+                                    </ImageView>
+                                </graphic>
+                            </Label>
+                            <Label text="6 / 6" textFill="WHITE"
+                                   style="-fx-background-color: #259BC3; -fx-background-radius: 10;">
+                                <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                </padding>
+                                <font>
+                                    <Font name="Segoe UI Black" size="10.0"/>
+                                </font>
+                            </Label>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT">
+                            <Label text="SubCo: ">
+                                <font>
+                                    <Font name="Segoe UI Semibold" size="12.0"/>
+                                </font>
+                                <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true"
+                                               preserveRatio="true">
+                                        <Image url="@/assets/subco.png"/>
+                                    </ImageView>
+                                </graphic>
+                            </Label>
+                            <Label text="MT21-1" textFill="WHITE"
+                                   style="-fx-background-color: #259BC3; -fx-background-radius: 10;">
+                                <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                </padding>
+                                <font>
+                                    <Font name="Segoe UI Black" size="10.0"/>
+                                </font>
+                            </Label>
+                        </HBox>
+                    </VBox>
+                    <VBox GridPane.columnIndex="1" GridPane.rowIndex="0"
+                          style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;">
+                        <padding>
+                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                        </padding>
+                        <Label text="Database">
+                            <font>
+                                <Font name="Segoe UI Semibold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT">
+                            <Label text="Total Material: ">
+                                <font>
+                                    <Font name="Segoe UI Semibold" size="12.0"/>
+                                </font>
+                                <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true"
+                                               preserveRatio="true">
+                                        <Image url="@/assets/course.png"/>
+                                    </ImageView>
+                                </graphic>
+                            </Label>
+                            <Label text="7 / 7" textFill="WHITE"
+                                   style="-fx-background-color: #259BC3; -fx-background-radius: 10;">
+                                <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                </padding>
+                                <font>
+                                    <Font name="Segoe UI Black" size="10.0"/>
+                                </font>
+                            </Label>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT">
+                            <Label text="SubCo: ">
+                                <font>
+                                    <Font name="Segoe UI Semibold" size="12.0"/>
+                                </font>
+                                <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true"
+                                               preserveRatio="true">
+                                        <Image url="@/assets/subco.png"/>
+                                    </ImageView>
+                                </graphic>
+                            </Label>
+                            <Label text="AD21-1" textFill="WHITE"
+                                   style="-fx-background-color: #259BC3; -fx-background-radius: 10;">
+                                <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                </padding>
+                                <font>
+                                    <Font name="Segoe UI Black" size="10.0"/>
+                                </font>
+                            </Label>
+                        </HBox>
+                    </VBox>
+                    <VBox GridPane.columnIndex="2" GridPane.rowIndex="0"
+                          style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;">
+                        <padding>
+                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                        </padding>
+                        <Label text="Java">
+                            <font>
+                                <Font name="Segoe UI Semibold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT">
+                            <Label text="Total Material: ">
+                                <font>
+                                    <Font name="Segoe UI Semibold" size="12.0"/>
+                                </font>
+                                <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true"
+                                               preserveRatio="true">
+                                        <Image url="@/assets/course.png"/>
+                                    </ImageView>
+                                </graphic>
+                            </Label>
+                            <Label text="1 / 6" textFill="WHITE"
+                                   style="-fx-background-color: #259BC3; -fx-background-radius: 10;">
+                                <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                </padding>
+                                <font>
+                                    <Font name="Segoe UI Black" size="10.0"/>
+                                </font>
+                            </Label>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT">
+                            <Label text="SubCo: ">
+                                <font>
+                                    <Font name="Segoe UI Semibold" size="12.0"/>
+                                </font>
+                                <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true"
+                                               preserveRatio="true">
+                                        <Image url="@/assets/subco.png"/>
+                                    </ImageView>
+                                </graphic>
+                            </Label>
+                            <Label text="LA21-1" textFill="WHITE"
+                                   style="-fx-background-color: #259BC3; -fx-background-radius: 10;">
+                                <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                </padding>
+                                <font>
+                                    <Font name="Segoe UI Black" size="10.0"/>
+                                </font>
+                            </Label>
+                        </HBox>
+                    </VBox>
+                    <VBox GridPane.columnIndex="0" GridPane.rowIndex="1"
+                          style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;">
+                        <padding>
+                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                        </padding>
+                        <Label text="Operating System">
+                            <font>
+                                <Font name="Segoe UI Semibold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT">
+                            <Label text="Total Material: ">
+                                <font>
+                                    <Font name="Segoe UI Semibold" size="12.0"/>
+                                </font>
+                                <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true"
+                                               preserveRatio="true">
+                                        <Image url="@/assets/course.png"/>
+                                    </ImageView>
+                                </graphic>
+                            </Label>
+                            <Label text="0 / 5" textFill="WHITE"
+                                   style="-fx-background-color: #259BC3; -fx-background-radius: 10;">
+                                <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                </padding>
+                                <font>
+                                    <Font name="Segoe UI Black" size="10.0"/>
+                                </font>
+                            </Label>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT">
+                            <Label text="SubCo: ">
+                                <font>
+                                    <Font name="Segoe UI Semibold" size="12.0"/>
+                                </font>
+                                <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true"
+                                               preserveRatio="true">
+                                        <Image url="@/assets/subco.png"/>
+                                    </ImageView>
+                                </graphic>
+                            </Label>
+                            <Label text="TBA" textFill="WHITE"
+                                   style="-fx-background-color: #259BC3; -fx-background-radius: 10;">
+                                <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                </padding>
+                                <font>
+                                    <Font name="Segoe UI Black" size="10.0"/>
+                                </font>
+                            </Label>
+                        </HBox>
+                    </VBox>
+                    <VBox GridPane.columnIndex="1" GridPane.rowIndex="1"
+                          style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;">
+                        <padding>
+                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                        </padding>
+                        <Label text="Web Design">
+                            <font>
+                                <Font name="Segoe UI Semibold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT">
+                            <Label text="Total Material: ">
+                                <font>
+                                    <Font name="Segoe UI Semibold" size="12.0"/>
+                                </font>
+                                <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true"
+                                               preserveRatio="true">
+                                        <Image url="@/assets/course.png"/>
+                                    </ImageView>
+                                </graphic>
+                            </Label>
+                            <Label text="0 / 6" textFill="WHITE"
+                                   style="-fx-background-color: #259BC3; -fx-background-radius: 10;">
+                                <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                </padding>
+                                <font>
+                                    <Font name="Segoe UI Black" size="10.0"/>
+                                </font>
+                            </Label>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT">
+                            <Label text="SubCo: ">
+                                <font>
+                                    <Font name="Segoe UI Semibold" size="12.0"/>
+                                </font>
+                                <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true"
+                                               preserveRatio="true">
+                                        <Image url="@/assets/subco.png"/>
+                                    </ImageView>
+                                </graphic>
+                            </Label>
+                            <Label text="TBA" textFill="WHITE"
+                                   style="-fx-background-color: #259BC3; -fx-background-radius: 10;">
+                                <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                </padding>
+                                <font>
+                                    <Font name="Segoe UI Black" size="10.0"/>
+                                </font>
+                            </Label>
+                        </HBox>
+                    </VBox>
+                    <VBox GridPane.columnIndex="2" GridPane.rowIndex="1"
+                          style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;">
+                        <padding>
+                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                        </padding>
+                        <Label text="PHP">
+                            <font>
+                                <Font name="Segoe UI Semibold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT">
+                            <Label text="Total Material: ">
+                                <font>
+                                    <Font name="Segoe UI Semibold" size="12.0"/>
+                                </font>
+                                <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true"
+                                               preserveRatio="true">
+                                        <Image url="@/assets/course.png"/>
+                                    </ImageView>
+                                </graphic>
+                            </Label>
+                            <Label text="0 / 4" textFill="WHITE"
+                                   style="-fx-background-color: #259BC3; -fx-background-radius: 10;">
+                                <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                </padding>
+                                <font>
+                                    <Font name="Segoe UI Black" size="10.0"/>
+                                </font>
+                            </Label>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT">
+                            <Label text="SubCo: ">
+                                <font>
+                                    <Font name="Segoe UI Semibold" size="12.0"/>
+                                </font>
+                                <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true"
+                                               preserveRatio="true">
+                                        <Image url="@/assets/subco.png"/>
+                                    </ImageView>
+                                </graphic>
+                            </Label>
+                            <Label text="TBA" textFill="WHITE"
+                                   style="-fx-background-color: #259BC3; -fx-background-radius: 10;">
+                                <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                </padding>
+                                <font>
+                                    <Font name="Segoe UI Black" size="10.0"/>
+                                </font>
+                            </Label>
+                        </HBox>
+                    </VBox>
+                    <VBox GridPane.columnIndex="0" GridPane.rowIndex="2"
+                          style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;">
+                        <padding>
+                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                        </padding>
+                        <Label text="Laravel">
+                            <font>
+                                <Font name="Segoe UI Semibold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT">
+                            <Label text="Total Material: ">
+                                <font>
+                                    <Font name="Segoe UI Semibold" size="12.0"/>
+                                </font>
+                                <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true"
+                                               preserveRatio="true">
+                                        <Image url="@/assets/course.png"/>
+                                    </ImageView>
+                                </graphic>
+                            </Label>
+                            <Label text="0 / 8" textFill="WHITE"
+                                   style="-fx-background-color: #259BC3; -fx-background-radius: 10;">
+                                <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                </padding>
+                                <font>
+                                    <Font name="Segoe UI Black" size="10.0"/>
+                                </font>
+                            </Label>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT">
+                            <Label text="SubCo: ">
+                                <font>
+                                    <Font name="Segoe UI Semibold" size="12.0"/>
+                                </font>
+                                <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true"
+                                               preserveRatio="true">
+                                        <Image url="@/assets/subco.png"/>
+                                    </ImageView>
+                                </graphic>
+                            </Label>
+                            <Label text="TBA" textFill="WHITE"
+                                   style="-fx-background-color: #259BC3; -fx-background-radius: 10;">
+                                <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                </padding>
+                                <font>
+                                    <Font name="Segoe UI Black" size="10.0"/>
+                                </font>
+                            </Label>
+                        </HBox>
+                    </VBox>
+                </GridPane>
+            </VBox>
+        </VBox>
+    </center>
+</BorderPane>
