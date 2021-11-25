@@ -15,6 +15,7 @@ public class MainApplication extends Application {
     private static final String FXML_LOGIN_URL = "login.fxml";
     private static final String FXML_DASHBOARD_URL = "dashboard.fxml";
     private static final String FXML_COURSES_URL = "courses.fxml";
+    private static final String FXML_FORUM_URL = "forum.fxml";
 
     private static final String ICON_URL = "src/main/resources/assets/favicon.png";
 
@@ -53,6 +54,13 @@ public class MainApplication extends Application {
     public void renderCoursesPage() {
         try{
             changeScene(FXML_COURSES_URL, 933, 700);
+        } catch (Exception ignored) {
+        }
+    }
+
+    public void renderForumPage() {
+        try{
+            changeScene(FXML_FORUM_URL, 933, 700);
         } catch (Exception ignored) {
         }
     }

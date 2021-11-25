@@ -10,6 +10,6 @@ public class DashboardController {
 
     @FXML
     private void forumAction() {
-
+        MainApplication.getInstance().renderForumPage();
     }
 }

@@ -2,14 +2,14 @@ package nar.laniverxity;
 
 import javafx.fxml.FXML;
 
-public class CoursesController {
+public class ForumController {
     @FXML
     private void dashboardAction() {
         MainApplication.getInstance().renderDashboardPage();
     }
 
     @FXML
-    private void forumAction() {
-        MainApplication.getInstance().renderForumPage();
+    private void coursesAction() {
+        MainApplication.getInstance().renderCoursesPage();
     }
 }
