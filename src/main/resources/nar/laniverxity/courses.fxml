@@ -16,7 +16,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+<BorderPane xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/"
             prefHeight="700.0" prefWidth="933.0"
             style="-fx-background-color: #DEF2F7;"
             fx:controller="nar.laniverxity.CoursesController">
