@@ -5,7 +5,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.JavaFXBuilderFactory;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
+import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 import java.util.Objects;
@@ -40,27 +42,28 @@ public class MainApplication extends Application {
     public void renderLoginPage() {
         try{
             changeScene(FXML_LOGIN_URL, 750, 500);
-        } catch (Exception ignored) {
+        } catch (Exception e) {
+            System.out.println(e);
         }
     }
 
     public void renderDashboardPage() {
         try{
-            changeScene(FXML_DASHBOARD_URL, 933, 700);
+            changeScene(FXML_DASHBOARD_URL, 933, 550);
         } catch (Exception ignored) {
         }
     }
 
     public void renderCoursesPage() {
         try{
-            changeScene(FXML_COURSES_URL, 933, 700);
+            changeScene(FXML_COURSES_URL, 933, 550);
         } catch (Exception ignored) {
         }
     }
 
     public void renderForumPage() {
         try{
-            changeScene(FXML_FORUM_URL, 933, 700);
+            changeScene(FXML_FORUM_URL, 933, 550);
         } catch (Exception ignored) {
         }
     }

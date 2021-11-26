@@ -18,7 +18,7 @@
 <?import javafx.scene.text.Font?>
 
 <BorderPane xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/"
-            prefHeight="700.0" prefWidth="933.0"
+            prefHeight="550.0" prefWidth="933.0"
             style="-fx-background-color: #DEF2F7;"
             fx:controller="nar.laniverxity.DashboardController">
     <top>
@@ -215,7 +215,8 @@
                                 <Image url="@/assets/location-input.png"/>
                             </ImageView>
                             <ComboBox prefWidth="320.0" promptText="Choose Location"
-                                      style="-fx-background-color: #FFFFFF; -fx-background-radius: 10; -fx-border-color: #B5BDC9; -fx-border-radius: 10;">
+                                      style="-fx-background-color: #FFFFFF; -fx-background-radius: 10; -fx-border-color: #B5BDC9; -fx-border-radius: 10;"
+                                      fx:id="universityList">
                                 <padding>
                                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                                 </padding>

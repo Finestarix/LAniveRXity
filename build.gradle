@@ -2,6 +2,7 @@ plugins {
     id 'java'
     id 'application'
     id 'org.openjfx.javafxplugin' version '0.0.10'
+    id 'com.github.johnrengelman.shadow' version '7.1.0'
 }
 
 group 'nar.laniverxity'
@@ -24,7 +25,7 @@ tasks.withType(JavaCompile) {
 
 application {
     mainModule = 'nar.laniverxity'
-    mainClass = 'nar.laniverxity.MainApplication'
+    mainClass = 'nar.laniverxity.Main'
 }
 
 javafx {

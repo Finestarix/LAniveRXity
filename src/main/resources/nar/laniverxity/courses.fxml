@@ -17,7 +17,7 @@
 <?import javafx.scene.text.Font?>
 
 <BorderPane xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/"
-            prefHeight="700.0" prefWidth="933.0"
+            prefHeight="550.0" prefWidth="933.0"
             style="-fx-background-color: #DEF2F7;"
             fx:controller="nar.laniverxity.CoursesController">
     <top>
@@ -188,7 +188,8 @@
             </Line>
             <VBox prefHeight="200.0" prefWidth="100.0">
                 <ComboBox prefWidth="320.0" promptText="Choose Semester"
-                          style="-fx-background-color: #FFFFFF; -fx-background-radius: 10; -fx-border-color: #B5BDC9; -fx-border-radius: 10;">
+                          style="-fx-background-color: #FFFFFF; -fx-background-radius: 10; -fx-border-color: #B5BDC9; -fx-border-radius: 10;"
+                          fx:id="semesterList">
                     <padding>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                     </padding>
@@ -222,6 +223,9 @@
                             </font>
                         </Label>
                         <HBox alignment="CENTER_LEFT">
+                            <VBox.margin>
+                                <Insets top="10.0"/>
+                            </VBox.margin>
                             <Label text="Total Material: ">
                                 <font>
                                     <Font name="Segoe UI Semibold" size="12.0"/>
@@ -236,14 +240,17 @@
                             <Label text="6 / 6" textFill="WHITE"
                                    style="-fx-background-color: #259BC3; -fx-background-radius: 10;">
                                 <padding>
-                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                    <Insets bottom="2.5" left="5.0" right="5.0" top="2.5"/>
                                 </padding>
                                 <font>
-                                    <Font name="Segoe UI Black" size="10.0"/>
+                                    <Font name="Segoe UI Black" size="12.0"/>
                                 </font>
                             </Label>
                         </HBox>
                         <HBox alignment="CENTER_LEFT">
+                            <VBox.margin>
+                                <Insets top="5.0"/>
+                            </VBox.margin>
                             <Label text="SubCo: ">
                                 <font>
                                     <Font name="Segoe UI Semibold" size="12.0"/>
@@ -258,10 +265,10 @@
                             <Label text="MT21-1" textFill="WHITE"
                                    style="-fx-background-color: #259BC3; -fx-background-radius: 10;">
                                 <padding>
-                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                    <Insets bottom="2.5" left="5.0" right="5.0" top="2.5"/>
                                 </padding>
                                 <font>
-                                    <Font name="Segoe UI Black" size="10.0"/>
+                                    <Font name="Segoe UI Black" size="12.0"/>
                                 </font>
                             </Label>
                         </HBox>
@@ -277,6 +284,9 @@
                             </font>
                         </Label>
                         <HBox alignment="CENTER_LEFT">
+                            <VBox.margin>
+                                <Insets top="10.0"/>
+                            </VBox.margin>
                             <Label text="Total Material: ">
                                 <font>
                                     <Font name="Segoe UI Semibold" size="12.0"/>
@@ -291,14 +301,17 @@
                             <Label text="7 / 7" textFill="WHITE"
                                    style="-fx-background-color: #259BC3; -fx-background-radius: 10;">
                                 <padding>
-                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                    <Insets bottom="2.5" left="5.0" right="5.0" top="2.5"/>
                                 </padding>
                                 <font>
-                                    <Font name="Segoe UI Black" size="10.0"/>
+                                    <Font name="Segoe UI Black" size="12.0"/>
                                 </font>
                             </Label>
                         </HBox>
                         <HBox alignment="CENTER_LEFT">
+                            <VBox.margin>
+                                <Insets top="5.0"/>
+                            </VBox.margin>
                             <Label text="SubCo: ">
                                 <font>
                                     <Font name="Segoe UI Semibold" size="12.0"/>
@@ -313,10 +326,10 @@
                             <Label text="AD21-1" textFill="WHITE"
                                    style="-fx-background-color: #259BC3; -fx-background-radius: 10;">
                                 <padding>
-                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                    <Insets bottom="2.5" left="5.0" right="5.0" top="2.5"/>
                                 </padding>
                                 <font>
-                                    <Font name="Segoe UI Black" size="10.0"/>
+                                    <Font name="Segoe UI Black" size="12.0"/>
                                 </font>
                             </Label>
                         </HBox>
@@ -332,6 +345,9 @@
                             </font>
                         </Label>
                         <HBox alignment="CENTER_LEFT">
+                            <VBox.margin>
+                                <Insets top="10.0"/>
+                            </VBox.margin>
                             <Label text="Total Material: ">
                                 <font>
                                     <Font name="Segoe UI Semibold" size="12.0"/>
@@ -346,14 +362,17 @@
                             <Label text="1 / 6" textFill="WHITE"
                                    style="-fx-background-color: #259BC3; -fx-background-radius: 10;">
                                 <padding>
-                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                    <Insets bottom="2.5" left="5.0" right="5.0" top="2.5"/>
                                 </padding>
                                 <font>
-                                    <Font name="Segoe UI Black" size="10.0"/>
+                                    <Font name="Segoe UI Black" size="12.0"/>
                                 </font>
                             </Label>
                         </HBox>
                         <HBox alignment="CENTER_LEFT">
+                            <VBox.margin>
+                                <Insets top="5.0"/>
+                            </VBox.margin>
                             <Label text="SubCo: ">
                                 <font>
                                     <Font name="Segoe UI Semibold" size="12.0"/>
@@ -368,10 +387,10 @@
                             <Label text="LA21-1" textFill="WHITE"
                                    style="-fx-background-color: #259BC3; -fx-background-radius: 10;">
                                 <padding>
-                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                    <Insets bottom="2.5" left="5.0" right="5.0" top="2.5"/>
                                 </padding>
                                 <font>
-                                    <Font name="Segoe UI Black" size="10.0"/>
+                                    <Font name="Segoe UI Black" size="12.0"/>
                                 </font>
                             </Label>
                         </HBox>
@@ -387,6 +406,9 @@
                             </font>
                         </Label>
                         <HBox alignment="CENTER_LEFT">
+                            <VBox.margin>
+                                <Insets top="10.0"/>
+                            </VBox.margin>
                             <Label text="Total Material: ">
                                 <font>
                                     <Font name="Segoe UI Semibold" size="12.0"/>
@@ -401,14 +423,17 @@
                             <Label text="0 / 5" textFill="WHITE"
                                    style="-fx-background-color: #259BC3; -fx-background-radius: 10;">
                                 <padding>
-                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                    <Insets bottom="2.5" left="5.0" right="5.0" top="2.5"/>
                                 </padding>
                                 <font>
-                                    <Font name="Segoe UI Black" size="10.0"/>
+                                    <Font name="Segoe UI Black" size="12.0"/>
                                 </font>
                             </Label>
                         </HBox>
                         <HBox alignment="CENTER_LEFT">
+                            <VBox.margin>
+                                <Insets top="5.0"/>
+                            </VBox.margin>
                             <Label text="SubCo: ">
                                 <font>
                                     <Font name="Segoe UI Semibold" size="12.0"/>
@@ -423,10 +448,10 @@
                             <Label text="TBA" textFill="WHITE"
                                    style="-fx-background-color: #259BC3; -fx-background-radius: 10;">
                                 <padding>
-                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                    <Insets bottom="2.5" left="5.0" right="5.0" top="2.5"/>
                                 </padding>
                                 <font>
-                                    <Font name="Segoe UI Black" size="10.0"/>
+                                    <Font name="Segoe UI Black" size="12.0"/>
                                 </font>
                             </Label>
                         </HBox>
@@ -442,6 +467,9 @@
                             </font>
                         </Label>
                         <HBox alignment="CENTER_LEFT">
+                            <VBox.margin>
+                                <Insets top="10.0"/>
+                            </VBox.margin>
                             <Label text="Total Material: ">
                                 <font>
                                     <Font name="Segoe UI Semibold" size="12.0"/>
@@ -456,14 +484,17 @@
                             <Label text="0 / 6" textFill="WHITE"
                                    style="-fx-background-color: #259BC3; -fx-background-radius: 10;">
                                 <padding>
-                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                    <Insets bottom="2.5" left="5.0" right="5.0" top="2.5"/>
                                 </padding>
                                 <font>
-                                    <Font name="Segoe UI Black" size="10.0"/>
+                                    <Font name="Segoe UI Black" size="12.0"/>
                                 </font>
                             </Label>
                         </HBox>
                         <HBox alignment="CENTER_LEFT">
+                            <VBox.margin>
+                                <Insets top="5.0"/>
+                            </VBox.margin>
                             <Label text="SubCo: ">
                                 <font>
                                     <Font name="Segoe UI Semibold" size="12.0"/>
@@ -478,10 +509,10 @@
                             <Label text="TBA" textFill="WHITE"
                                    style="-fx-background-color: #259BC3; -fx-background-radius: 10;">
                                 <padding>
-                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                    <Insets bottom="2.5" left="5.0" right="5.0" top="2.5"/>
                                 </padding>
                                 <font>
-                                    <Font name="Segoe UI Black" size="10.0"/>
+                                    <Font name="Segoe UI Black" size="12.0"/>
                                 </font>
                             </Label>
                         </HBox>
@@ -497,6 +528,9 @@
                             </font>
                         </Label>
                         <HBox alignment="CENTER_LEFT">
+                            <VBox.margin>
+                                <Insets top="10.0"/>
+                            </VBox.margin>
                             <Label text="Total Material: ">
                                 <font>
                                     <Font name="Segoe UI Semibold" size="12.0"/>
@@ -511,14 +545,17 @@
                             <Label text="0 / 4" textFill="WHITE"
                                    style="-fx-background-color: #259BC3; -fx-background-radius: 10;">
                                 <padding>
-                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                    <Insets bottom="2.5" left="5.0" right="5.0" top="2.5"/>
                                 </padding>
                                 <font>
-                                    <Font name="Segoe UI Black" size="10.0"/>
+                                    <Font name="Segoe UI Black" size="12.0"/>
                                 </font>
                             </Label>
                         </HBox>
                         <HBox alignment="CENTER_LEFT">
+                            <VBox.margin>
+                                <Insets top="5.0"/>
+                            </VBox.margin>
                             <Label text="SubCo: ">
                                 <font>
                                     <Font name="Segoe UI Semibold" size="12.0"/>
@@ -533,10 +570,10 @@
                             <Label text="TBA" textFill="WHITE"
                                    style="-fx-background-color: #259BC3; -fx-background-radius: 10;">
                                 <padding>
-                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                    <Insets bottom="2.5" left="5.0" right="5.0" top="2.5"/>
                                 </padding>
                                 <font>
-                                    <Font name="Segoe UI Black" size="10.0"/>
+                                    <Font name="Segoe UI Black" size="12.0"/>
                                 </font>
                             </Label>
                         </HBox>
@@ -552,6 +589,9 @@
                             </font>
                         </Label>
                         <HBox alignment="CENTER_LEFT">
+                            <VBox.margin>
+                                <Insets top="10.0"/>
+                            </VBox.margin>
                             <Label text="Total Material: ">
                                 <font>
                                     <Font name="Segoe UI Semibold" size="12.0"/>
@@ -566,14 +606,17 @@
                             <Label text="0 / 8" textFill="WHITE"
                                    style="-fx-background-color: #259BC3; -fx-background-radius: 10;">
                                 <padding>
-                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                    <Insets bottom="2.5" left="5.0" right="5.0" top="2.5"/>
                                 </padding>
                                 <font>
-                                    <Font name="Segoe UI Black" size="10.0"/>
+                                    <Font name="Segoe UI Black" size="12.0"/>
                                 </font>
                             </Label>
                         </HBox>
                         <HBox alignment="CENTER_LEFT">
+                            <VBox.margin>
+                                <Insets top="5.0"/>
+                            </VBox.margin>
                             <Label text="SubCo: ">
                                 <font>
                                     <Font name="Segoe UI Semibold" size="12.0"/>
@@ -588,10 +631,10 @@
                             <Label text="TBA" textFill="WHITE"
                                    style="-fx-background-color: #259BC3; -fx-background-radius: 10;">
                                 <padding>
-                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                    <Insets bottom="2.5" left="5.0" right="5.0" top="2.5"/>
                                 </padding>
                                 <font>
-                                    <Font name="Segoe UI Black" size="10.0"/>
+                                    <Font name="Segoe UI Black" size="12.0"/>
                                 </font>
                             </Label>
                         </HBox>
